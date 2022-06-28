@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="k_to_f.css">
+</head>
+<body>
+    <a href="home.html">Home</a>
+    <div class="container">
+        <h1>fahrenite to kelvin converter</h1>
+        <div class="temp">
+            <label for="" >fahrenite</label>
+            <br>
+            <input type="text" id="fah" value="0">
+        </div>
+        <hr>
+        <div class="temp">
+            <label for="">Kelvin</label>
+             <br>
+            <input type="text" id="kel" value="255.2222">
+        </div>  
+    </div>
+    <script>
+        let fah=document.getElementById('fah');
+        let kel=document.getElementById('kel');
+        fah.addEventListener('input',function(){
+        let f= this.value;
+        let k= ((f -32)*5/9) + 273;
+         kel.value=k;
+        });
+
+        kel.addEventListener('input', function(){
+        let k=this.value;
+        let f= (9/5*(k-273)) + 32;
+        fah.value=f;
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>

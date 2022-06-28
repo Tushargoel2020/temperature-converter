@@ -1,0 +1,44 @@
+body{
+    background-image: url('image/1.jpg');
+    background-size: cover;
+    height: 600px;
+
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+    border: 1px solid bisque;
+    background-color: bisque;
+    box-shadow: 5px 5px 2px bisque;
+}
+.container{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid blue;
+    height: 350px;
+    width: 400px;
+    background-image: linear-gradient(pink,rgba(0, 0, 255, 0.808),aqua);
+    position: relative;
+    top: 140px;
+    left: 34%;
+}
+.temp{
+    padding: 8px;
+    margin: 10px;
+   text-align: center;
+   font-size: 40px;
+    
+}
+#cel{
+    margin: 10px ;
+    font-size: 20px;
+    padding: 7px;
+    background-color: rgba(255, 0, 204, 0.511);
+    
+}
+#fah{
+    margin: 10px;
+    font-size: 20px;
+    padding: 7px;
+    background-color: rgba(81, 255, 0, 0.516);
+}

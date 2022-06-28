@@ -1,0 +1,43 @@
+body{
+    background-image: url('image/5.jpg');
+    background-size: cover;
+    height: 600px;
+
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    left: 40px;
+}
+.container{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid blue;
+    height: 350px;
+    width: 400px;
+    background-image: linear-gradient(rgb(119 0 255 / 52%),rgb(51 0 255 / 81%),#00ff9d);;
+    position: relative;
+    top: 140px;
+    left: 34%;
+}
+.temp{
+    padding: 8px;
+    margin: 10px;
+   text-align: center;
+   font-size: 40px;
+    
+}
+#fah{
+    margin: 10px ;
+    font-size: 20px;
+    padding: 7px;
+    background-color: rgba(255, 0, 204, 0.511);
+    
+}
+#kel{
+    margin: 10px;
+    font-size: 20px;
+    padding: 7px;
+    background-color: rgba(81, 255, 0, 0.516);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="c_to_k.css">
+</head>
+<body>
+    <a href="home.html">Home</a>
+    <div class="container">
+        <h1>celsius to kelvin converter</h1>
+        <div class="temp">
+            <label for="" >celsius</label>
+            <br>
+            <input type="text" id="cel" value="0">
+        </div>
+        <hr>
+        <div class="temp">
+            <label for="">Kelvin</label>
+             <br>
+            <input type="text" id="kel" value="273">
+        </div>  
+    </div>
+    <script>
+        let cel=document.getElementById('cel');
+        let kel=document.getElementById('kel');
+        cel.addEventListener('input', function(){
+            let c=this.value;
+            let j=c-(-273);
+            kel.value=j;
+        });
+
+        kel.addEventListener('input', function(){
+        let k=this.value;
+        let c= k-273;
+        cel.value=c;
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>
